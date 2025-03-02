@@ -1,4 +1,4 @@
-/* Pneumonia Detector UI Fixes */
+
 :root {
     --primary-color: #007bff;
     --danger-color: #dc3545;
@@ -24,7 +24,6 @@ body {
     margin: 0;
 }
 
-/* Bring back title */
 header {
     width: 100%;
     text-align: center;
@@ -36,13 +35,13 @@ h1 {
     color: var(--text-color);
 }
 
-/* Make sure the three cards are in a row */
+
 .container {
     max-width: 1200px;
     display: flex;
     justify-content: center;
-    gap: 2rem; /* This adds space between cards */
-    flex-wrap: wrap; /* Allows wrapping on small screens */
+    gap: 2rem; 
+    flex-wrap: wrap; 
     padding: 20px;
 }
 
@@ -58,13 +57,12 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-/* If you want even more spacing, add margin */
+
 .card:not(:last-child) {
-    margin-right: 20px; /* Adds space to the right of every card except the last one */
+    margin-right: 20px; 
 }
 
 
-/* Upload section */
 .upload-container {
     border: 2px dashed var(--primary-color);
     padding: 1.5rem;
@@ -100,13 +98,13 @@ h1 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Text inside hospital recommendations */
+
 .disclaimer {
     font-size: 0.85rem;
     color: #555;
 }
 
-/* Ensure small sections inside cards have a white background */
+
 .severity-section,
 .treatment-section {
     background: white !important;
