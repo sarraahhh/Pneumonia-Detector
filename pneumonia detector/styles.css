@@ -1,0 +1,156 @@
+/* Pneumonia Detector UI Fixes */
+:root {
+    --primary-color: #007bff;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --background-color: #FFDADA;
+    --card-background: #F0F0F0;
+    --text-color: #333;
+    --blue-text: #007bff;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Bring back title */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+/* Make sure the three cards are in a row */
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* This adds space between cards */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    padding: 20px;
+}
+
+.card {
+    background-color: #F0F0F0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 50;
+    min-width: 300px;
+    height: 710px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* If you want even more spacing, add margin */
+.card:not(:last-child) {
+    margin-right: 20px; /* Adds space to the right of every card except the last one */
+}
+
+
+/* Upload section */
+.upload-container {
+    border: 2px dashed var(--primary-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.upload-container:hover {
+    background-color: rgba(0, 123, 255, 0.15);
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text inside hospital recommendations */
+.disclaimer {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Ensure small sections inside cards have a white background */
+.severity-section,
+.treatment-section {
+    background: white !important;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.severity-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.hospitals-list{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.initial-message{
+  
+    margin-bottom: 30px;
+}
+
+.result-display{
+    margin-top: 30px;
+}
+#previewImage {
+    max-width: 100%; 
+    max-height: 300px; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    margin-bottom: 30px;
+}
+.preview-controls{
+    margin-top: 30px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
