@@ -9,7 +9,7 @@ A web-based pneumonia detection system using deep learning.
 📌 About the Project
 
 
-This is a pneumonia detection web application that allows users to upload chest X-ray images and get a diagnosis using a deep learning model. The system classifies the X-ray into Normal, Mild, or Severe Pneumonia based on the image analysis.
+This is a pneumonia detection web application that allows users to upload chest X-ray images and get a diagnosis using a deep learning model. The system classifies the X-ray into Normal, Mild, or Severe Pneumonia based on the image analysis. The model has been trained to an accuracy of 80.61%
 
 
 🚀 Features
